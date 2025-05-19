@@ -1,9 +1,9 @@
-export type TodoProps = {
+export type textProps = {
   isChecked: boolean;
   text: string;
 };
 
-const TodoText = ({ isChecked, text }: TodoProps) => {
+const Text = ({ isChecked, text }: textProps) => {
   return (
     <span style={{ textDecoration: `${isChecked ? "line-through" : "none"}` }}>
       {text}
@@ -11,4 +11,4 @@ const TodoText = ({ isChecked, text }: TodoProps) => {
   );
 };
 
-export default TodoText;
+export default Text;
